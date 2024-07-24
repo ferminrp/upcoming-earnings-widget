@@ -1,9 +1,6 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: deep-blue; icon-glyph: calendar-alt;
 const symbolsToTrack = ['AAPL', 'AMZN', 'MSFT', 'TSLA', 'META', 'NVDA', 'GOOGL', 'HOOD', 'NU', 'MELI','COIN','RIVN','SPOT','NFLX','RBLX','BRK.B'];
 const widgetSize = 'large';
-const MAX_DISPLAY_ITEMS = 11; // Changed from 14 to 11
+const MAX_DISPLAY_ITEMS = 11;
 const MELI_CUSTOM_LOGO = 'https://i.ibb.co/tzVQ2KH/Fey-Logo-1.png';
 
 async function getLogoImage(symbol) {
@@ -102,7 +99,7 @@ async function createWidget(data) {
     revText.font = Font.systemFont(13);
     revText.textColor = new Color("#ADADAD");
     
-    // Push content to the left
+
     stack.addSpacer();
     
     widget.addSpacer(8);
